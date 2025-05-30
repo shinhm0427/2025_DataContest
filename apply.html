@@ -45,6 +45,15 @@
       height: 1200px;
       border: none;
     }
+    .fallback {
+      margin-top: 20px;
+      font-size: 1em;
+      color: #555;
+    }
+    .fallback a {
+      color: #2a9d8f;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -58,8 +67,23 @@
   </nav>
 
   <div class="container">
-    <p>아래 양식을 작성하여 공모전에 신청해 주세요.</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwW9VtvahE2VnBUO5eEWgFtkJCvwPRwETZh_vUt02U-ts4AA/viewform?usp=sharing&ouid=103057676563524554805">로드 중...</iframe>
+    <h2>공모전 신청서</h2>
+    <p>아래 양식을 작성해 주세요.</p>
+
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfwW9VtvahE2VnBUO5eEWgFtkJCvwPRwETZh_vUt02U-ts4AA/viewform?embedded=true" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      로드 중...
+    </iframe>
+
+    <p class="fallback">
+      📌 양식이 보이지 않으면 
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwW9VtvahE2VnBUO5eEWgFtkJCvwPRwETZh_vUt02U-ts4AA/viewform" target="_blank">
+        이곳
+      </a>을 클릭해 신청서를 작성해 주세요.
+    </p>
   </div>
 </body>
 </html>
