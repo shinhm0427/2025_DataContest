@@ -11,17 +11,18 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #003049;
       color: white;
       padding: 30px;
-      text-align: center;
     }
+
     .header-content {
       display: flex;
       align-items: center;
-      justify-content: canter;
-      gap: 730px;
+      justify-content: center;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
@@ -29,17 +30,19 @@
       height: 70px;
       width: auto;
     }
-   .header-title {
-      flex-grow: 1;
-      text-align: center;
+
+    .header-title {
       font-size: 2.2em;
       font-weight: bold;
+      text-align: center;
     }
+
     nav {
       background-color: #2D3E4E;
       padding: 20px;
       text-align: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -47,16 +50,19 @@
       font-weight: bold;
       font-size: 1.6em;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
+
+    .main-image-section {
+      background-color: #DFD0AE;
+      padding: 60px 0;
       text-align: center;
     }
+
     .main-image {
-      max-width: 100%;
+      max-width: 90%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -66,8 +72,9 @@
 <body>
   <header>
     <div class="header-content">
-    <img src="images/kfri_ci_black.png" alt="한국식품연구원 로고" class="logo" />
-    <h1>한국식품연구원 데이터 분석/활용 공모전</h1>
+      <img src="images/kfri_ci_black.png" alt="한국식품연구원 로고" class="logo" />
+      <div class="header-title">한국식품연구원 데이터 분석/활용 공모전</div>
+    </div>
   </header>
 
   <nav>
@@ -77,8 +84,8 @@
     <a href="qna.html">Q&A</a>
   </nav>
 
-  <div class="container">
-    <img src="images/main-image.jpg" alt="공모전 이미지" class="main-image">
+  <div class="main-image-section">
+    <img src="images/main-image.jpg" alt="공모전 이미지" class="main-image" />
   </div>
 </body>
 </html>
