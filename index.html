@@ -51,8 +51,18 @@
       font-size: 1.4em;
       font-weight: bold;
       color: #003049;
+      position: relative; /* 삼각형 위치 기준 */
     }
-
+    .triangle {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 0;
+      height: 0;
+      border-top: 25px solid #b6d7a8; /* 삼각형 색상 */
+      border-left: 25px solid transparent;
+    }
+    
     .main-section {
       text-align: center;
       padding: 60px 20px;
@@ -74,11 +84,10 @@
     }
 
     .ci-section {
+      background-color: #e6e1d3;
       text-align: right;
-      padding: 20px 40px;
-      background-color: #e6e1d3; /* ✨ 어울리는 색상 추천 */
+      padding: 20px 40px; 
     }
-
     .ci-logo {
       height: 30px;
       width: auto;
