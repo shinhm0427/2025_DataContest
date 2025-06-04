@@ -25,16 +25,18 @@
 
     header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       background-color: #fdfaec;
-      padding: 20px 40px;
+      padding: 20px 20px;
       border-bottom: 2px solid #d6cfc2;
     }
 
     .nav-left {
       display: flex;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .nav-left a {
@@ -48,7 +50,6 @@
       text-decoration: underline;
     }
 
-    /* ✅ 현재 페이지 탭 스타일 */
     .nav-left a.active {
       font-weight: 800;
       text-decoration: underline;
@@ -103,6 +104,33 @@
     .ci-logo {
       height: 40px;
       width: auto;
+    }
+
+    /* ✅ 모바일 대응 */
+    @media (max-width: 768px) {
+      .title-right {
+        font-size: 1.1em;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-left {
+        justify-content: center;
+        width: 100%;
+      }
+
+      iframe {
+        height: 500px;
+      }
+
+      .ci-section {
+        text-align: center;
+      }
+
+      .ci-logo {
+        height: 30px;
+      }
     }
   </style>
 </head>
