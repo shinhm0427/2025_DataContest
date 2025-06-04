@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>한국식품연구원 데이터 분석/활용 공모전</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>한국식품연구원 데이터 분석·활용 공모전</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3ecdd; /* 전체 배경 */
+      color: #003049;
+    }
+
+    /* 상단 얇은 선 */
+    .top-line {
+      height: 2px;
+      background-color: #c4c4b7;
     }
 
     header {
-      background-color: #8CBDB9;
-      color: white;
-      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fdfaec;
+      padding: 20px 40px;
+      border-bottom: 2px solid #d6cfc2;
     }
 
-  .header-content {
-      position: relative;
-      height: 70px;
+    .nav-left {
+      display: flex;
+      gap: 25px;
     }
 
-    .logo {
-      height: 70px;
-      width: auto;
-    }
-
-    .header-title {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      color: #003049;
-      font-size: 2.2em;
-      font-weight: bold;
-      text-align: center;
-      white-space: nowrap;
-    }
-    
-    nav {
-      background-color: #2D3E4E;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
+    .nav-left a {
       text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      font-size: 1.6em;
+      color: #1f2e30;
+      font-weight: 600;
+      font-size: 1.1em;
     }
 
-    nav a:hover {
+    .nav-left a:hover {
       text-decoration: underline;
     }
 
-    .main-image-section {
-      background-color: #DFD0AE;
-      padding: 60px 0;
+    .title-right {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #003049;
+    }
+
+    .main-section {
       text-align: center;
+      padding: 60px 20px;
     }
 
     .main-image {
-      max-width: 60%;
+      max-width: 90%;
       height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-    
+
+    .divider {
+      height: 1px;
+      background-color: #000;
+      margin: 40px auto;
+      max-width: 90%;
+    }
+
+    footer {
+      text-align: right;
+      padding: 20px 40px;
+      font-size: 0.9em;
+      color: #2b2b2b;
+    }
   </style>
 </head>
 <body>
+
+  <div class="top-line"></div>
+
   <header>
-    <div class="header-content">
-      <img src="images/kfri_ci_black.png" alt="한국식품연구원 로고" class="logo" />
-      <div class="header-title">한국식품연구원 데이터 분석/활용 공모전</div>
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="notice.html">Notice</a>
+      <a href="apply.html">Registration</a>
+      <a href="qna.html">Q&A</a>
+    </div>
+    <div class="title-right">
+      한국식품연구원 데이터 분석·활용 공모전
     </div>
   </header>
 
-  <nav>
-    <a href="index.html">홈</a>
-    <a href="notice.html">공지사항</a>
-    <a href="apply.html">공모전 신청</a>
-    <a href="qna.html">Q&A</a>
-  </nav>
-
-  <div class="main-image-section">
-    <img src="images/main-image.jpg" alt="공모전 이미지" class="main-image" />
+  <div class="main-section">
+    <img src="main-image.jpg" alt="공모전 포스터" class="main-image" />
   </div>
+
+<div class="divider"></div>
+
+  <footer>
+    <img src="images/kfri-ci-black.png" alt="KFRI 로고" style="height: 30px; width: auto" />
+  </footer>
+  
 </body>
 </html>
