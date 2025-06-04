@@ -48,6 +48,13 @@
       text-decoration: underline;
     }
 
+    /* ✅ 현재 페이지 탭 스타일 */
+    .nav-left a.active {
+      font-weight: 800;
+      text-decoration: underline;
+      color: #003049;
+    }
+
     .title-right {
       font-size: 1.4em;
       font-weight: bold;
@@ -106,7 +113,7 @@
   <header>
     <div class="nav-left">
       <a href="index.html">Home</a>
-      <a href="notice.html" style="color: red;">Notice</a>
+      <a href="notice.html" class="active">Notice</a>
       <a href="apply.html">Registration</a>
       <a href="qna.html">Q&A</a>
     </div>
@@ -117,7 +124,7 @@
   </header>
 
   <div class="main-section">
-    <h2 style="margin-bottom: 20px;">📢 Notice</h2>
+    <h2>📢 공지사항</h2>
     <iframe src="https://data.kfri.re.kr/datacontest2025/bbs/board.php?bo_table=notice"></iframe>
   </div>
 
