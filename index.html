@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>한국식품연구원 데이터 분석·활용 공모전</title>
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-  
+
   <style>
     body {
       margin: 0;
@@ -15,6 +15,7 @@
       font-size: 1.2em;
       font-weight: 600;
       color: #003049;
+      background-color: #f4f4f4;
     }
 
     .top-line {
@@ -24,16 +25,18 @@
 
     header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       background-color: #fdfaec;
-      padding: 20px 40px;
+      padding: 20px 20px;
       border-bottom: 2px solid #d6cfc2;
     }
 
     .nav-left {
       display: flex;
-      gap: 50px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .nav-left a {
@@ -60,18 +63,19 @@
       right: -18px;
       width: 0;
       height: 0;
-      border-top: 50px solid #b6d7a8;
-      border-left: 50px solid transparent;
+      border-top: 40px solid #b6d7a8;
+      border-left: 40px solid transparent;
     }
 
     .main-section {
-      text-align: center;
-      padding: 60px 20px;
       background-color: #f3ecdd;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     .main-image {
-      max-width: 60%;
+      width: 100%;
+      max-width: 600px;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -80,19 +84,42 @@
     .divider {
       height: 1px;
       background-color: #000;
-      margin: 0;
-      width: 100%; /* ✅ 전체 너비로 수정 */
+      margin: 0 auto;
+      max-width: 100%;
     }
 
     .ci-section {
       background-color: #e6e1d3;
       text-align: right;
-      padding: 20px 40px; 
+      padding: 20px 40px;
     }
 
     .ci-logo {
-      height: 50px;
+      height: 40px;
       width: auto;
+    }
+
+    /* ✅ 모바일 대응 */
+    @media (max-width: 768px) {
+      .title-right {
+        font-size: 1.1em;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-left {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .ci-section {
+        text-align: center;
+      }
+
+      .ci-logo {
+        height: 30px;
+      }
     }
   </style>
 </head>
@@ -102,14 +129,14 @@
 
   <header>
     <div class="nav-left">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="notice.html">Notice</a>
       <a href="apply.html">Registration</a>
       <a href="qna.html">Q&A</a>
     </div>
     <div class="title-right">
       한국식품연구원 데이터 분석·활용 공모전
-      <div class="triangle"></div> <!-- ✅ 삼각형 추가됨 -->
+      <div class="triangle"></div>
     </div>
   </header>
 
